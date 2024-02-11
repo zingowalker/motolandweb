@@ -40,14 +40,12 @@ const AboutPage = () => {
                 motorcycle renting and touring in Leh Ladakh.
               </p>
               <p>
-                {" "}
                 With over a decade of experience in the industry, our passion
                 for adventure runs deep, and now, as proud owner of our own
                 Motorcycle travel agency, we are dedicated to providing you with
                 unparalleled experiences on two wheels.
               </p>
               <p>
-                {" "}
                 At Motoland Adventures, we understand the allure of the open road
                 and the thrill of exploring new horizons. Our meticulously
                 curated tours are designed to immerse you in the inspiring
@@ -61,14 +59,12 @@ const AboutPage = () => {
                 here to cater to your every need.
               </p>
               <p>
-                {" "}
                 From motorcycles rental to expertly crafted
                 itineraries, we ensure that every aspect of your journey is
                 seamlessly taken care of, allowing you to focus on what truly
                 matters – the ride of a lifetime.
               </p>
               <p>
-                {" "}
                 But our commitment to excellence does not stop there. As locals
                 of Ladakh, we possess an intimate knowledge of the region, its
                 culture, and its hidden gems. This insider insight allows us to
@@ -76,7 +72,6 @@ const AboutPage = () => {
                 deeper connection to the land and its people.
               </p>
               <p>
-                {" "}
                 Join us at Motoland Adventures and let us take you on a journey
                 like no other. Whether you are conquering mountain passes,
                 traversing rugged terrain, or simply soaking in the serenity of
@@ -206,7 +201,6 @@ const AboutPage = () => {
                   </div>
                   <div className="p-3 text-sm italic">
                     Founder and owner Motoland Adventures.
-                    {" "}
                   </div>
                   <div className="p-3 text-red-400 text-sm font-semibold">
                     2023 - Present
@@ -235,10 +229,10 @@ const AboutPage = () => {
                   </div>
                   <div className="p-3 text-sm italic">
                     As a tour manager, my role was to orchestrate seamless
-                    journeys in Ladakh/Zanskar.{" "}
+                    journeys in Ladakh/Zanskar.
                   </div>
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2017 - 2023{" "}
+                    2017 - 2023
                   </div>
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
                     Eco India Journeys
@@ -248,15 +242,15 @@ const AboutPage = () => {
               <div className="flex justify-between h-48">
                 <div className="w-1/3 ">
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Tour Executive{" "}
+                    Tour Executive
                   </div>
                   <div className="p-3 text-sm italic">
                     I specialize in crafting tailored solutions for clients by
                     designing a diverse range of itineraries to meet their
-                    unique needs and preferences.{" "}
+                    unique needs and preferences.
                   </div>
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2015 - 2017{" "}
+                    2015 - 2017
                   </div>
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
                     Footprint Adventures
@@ -284,10 +278,10 @@ const AboutPage = () => {
                   <div className="p-3 text-sm italic">
                     I led trekking to destinations
                     including Rumtse Tsomoriri, Markha Valley, Sham Valley,
-                    Lamayuru to Darcha, and numerous other routes.{" "}
+                    Lamayuru to Darcha, and numerous other routes.
                   </div>
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2009 - 2015{" "}
+                    2009 - 2015
                   </div>
                 </div>
               </div>
