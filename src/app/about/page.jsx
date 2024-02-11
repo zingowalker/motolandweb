@@ -10,7 +10,6 @@ const AboutPage = () => {
   const { scrollYProgress } = useScroll({ container: containerRef });
 
   const skillRef = useRef();
-  // const isSkillRefInView = useInView(skillRef, {once:true});
   const isSkillRefInView = useInView(skillRef, { margin: "-100px" });
 
   const experienceRef = useRef();
@@ -23,13 +22,9 @@ const AboutPage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      {/* CONTAINER */}
       <div className="h-full overflow-scroll lg:flex" ref={containerRef}>
-        {/* TEXT CONTAINER */}
         <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
-          {/* BIOGRAPHY CONTAINER */}
           <div className="flex flex-col gap-12 justify-center">
-            {/* BIOGRAPHY IMAGE */}
             <Image
               src="/profile.png"
               alt="profile image"
@@ -38,7 +33,6 @@ const AboutPage = () => {
               className="w-28 h-28 rounded-full object-cover"
             />
 
-            {/* BIOGRAPHY DESC */}
             <article class="prose lg:prose-xl">
               <h1 className="font-bold text-2xl">About</h1>
               <p>
@@ -61,7 +55,7 @@ const AboutPage = () => {
                 create unforgettable memories at your own pace.
               </p>
               <p>
-                Whether you're a seasoned rider seeking the ultimate adrenaline
+                Whether youre a seasoned rider seeking the ultimate adrenaline
                 rush or a novice adventurer looking to embark on your first
                 motorcycle expedition, our team of seasoned professionals is
                 here to cater to your every need.
@@ -75,7 +69,7 @@ const AboutPage = () => {
               </p>
               <p>
                 {" "}
-                But our commitment to excellence doesn't stop there. As locals
+                But our commitment to excellence does not stop there. As locals
                 of Ladakh, we possess an intimate knowledge of the region, its
                 culture, and its hidden gems. This insider insight allows us to
                 curate experiences that go beyond the ordinary, offering you a
@@ -84,21 +78,20 @@ const AboutPage = () => {
               <p>
                 {" "}
                 Join us at Motoland Adventures and let us take you on a journey
-                like no other. Whether you're conquering mountain passes,
+                like no other. Whether you are conquering mountain passes,
                 traversing rugged terrain, or simply soaking in the serenity of
                 the Himalayas, we guarantee an adventure that will stay with you
                 long after the dust settles. Embark on your next great adventure
-                with Motoland Adventure – where every mile is a masterpiece and
+                with Motoland Adventure where every mile is a masterpiece and
                 every moment is an opportunity for discovery.
               </p>
             </article>
             <span className="italic">
               Celebrating the freedom of the open road and the thrill of
               two-wheel exploration, our journey at Motoland Adventures is more
-              than just a ride; it's a testament to the spirit of adventure that
+              than just a ride it is a testament to the spirit of adventure that
               fuels our souls and drives us forward."
             </span>
-            {/* BIOGRAPHY SIGN SVG*/}
             <div className="self-end text-sm rounded-md p-1 font-semibold flex">
               <span className="w-28 h-8 rounded bg-black text-red-500  flex items-center justify-center">
                 Motoland
@@ -107,7 +100,6 @@ const AboutPage = () => {
                 Adventures
               </span>
             </div>
-            {/* BIOGRAPHY SCROLL SVG */}
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
               animate={{ opacity: 1, y: "10px" }}
@@ -166,8 +158,10 @@ const AboutPage = () => {
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Package Tours
               </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Ladakh Taxi Package Tours
+              </div>
             </motion.div>
-            {/* SKILL SCROLL SVG */}
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
               animate={{ opacity: 1, y: "10px" }}
@@ -191,12 +185,10 @@ const AboutPage = () => {
               ></path>
             </motion.svg>
           </div>
-          {/* EXPERIENCE CONTAINER */}
           <div
             className="flex flex-col gap-12 justify-center pb-48"
             ref={experienceRef}
           >
-            {/* EXPERIENCE TITLE */}
             <motion.h1
               initial={{ x: "-300px" }}
               animate={isExperienceRefInView ? { x: "0" } : {}}
@@ -205,93 +197,67 @@ const AboutPage = () => {
             >
               EXPERIENCE
             </motion.h1>
-            {/* EXPERIENCE LIST */}
             <motion.div
               initial={{ x: "-300px" }}
               animate={isExperienceRefInView ? { x: "0" } : {}}
               className=""
             >
-              {/* EXPERIENCE LIST ITEM */}
               <div className="flex justify-between h-48">
-                {/* LEFT */}
                 <div className="w-1/3 ">
-                  {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
                     Founder & Owner
                   </div>
-                  {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
                     Founder and owner Motoland Adventures.
                     {" "}
                   </div>
-                  {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
                     2023 - Present
                   </div>
-                  {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
                     Motoland Adventures
                   </div>
                 </div>
-                {/* CENTER */}
                 <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
                     <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
                   </div>
                 </div>
-                {/* RIGHT */}
                 <div className="w-1/3 "></div>
               </div>
-              {/* EXPERIENCE LIST ITEM */}
               <div className="flex justify-between h-48">
-                {/* LEFT */}
                 <div className="w-1/3 "></div>
-                {/* CENTER */}
                 <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
                     <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
                   </div>
                 </div>
-                {/* RIGHT */}
                 <div className="w-1/3 ">
-                  {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
                     Manager
                   </div>
-                  {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
                     As a tour manager, my role was to orchestrate seamless
                     journeys in Ladakh/Zanskar.{" "}
                   </div>
-                  {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
                     2017 - 2023{" "}
                   </div>
-                  {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
                     Eco India Journeys
                   </div>
                 </div>
               </div>
-              {/* EXPERIENCE LIST ITEM */}
               <div className="flex justify-between h-48">
-                {/* LEFT */}
                 <div className="w-1/3 ">
-                  {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
                     Tour Executive{" "}
                   </div>
-                  {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
                     I specialize in crafting tailored solutions for clients by
                     designing a diverse range of itineraries to meet their
                     unique needs and preferences.{" "}
                   </div>
-                  {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
                     2015 - 2017{" "}
                   </div>
@@ -299,42 +265,30 @@ const AboutPage = () => {
                     Footprint Adventures
                   </div>
                 </div>
-                {/* CENTER */}
                 <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
                     <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
                   </div>
                 </div>
 
-                {/* RIGHT */}
                 <div className="w-1/3 "></div>
               </div>
               <div className="flex justify-between h-48">
-                {/* LEFT */}
                 <div className="w-1/3 "></div>
-                {/* CENTER */}
                 <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
                     <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
                   </div>
                 </div>
-                {/* RIGHT */}
                 <div className="w-1/3">
-                  {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
                     Trek Guide
                   </div>
-                  {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
                     I led trekking to destinations
                     including Rumtse Tsomoriri, Markha Valley, Sham Valley,
                     Lamayuru to Darcha, and numerous other routes.{" "}
                   </div>
-                  {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
                     2009 - 2015{" "}
                   </div>
@@ -343,7 +297,6 @@ const AboutPage = () => {
             </motion.div>
           </div>
         </div>
-        {/* SVG CONTAINER */}
         <div className="hidden lg:block w-1/3 sticky top-0 z-30 xl:w-1/2">
           <Brain scrollYProgress={scrollYProgress} />
         </div>
