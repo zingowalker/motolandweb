@@ -50,7 +50,7 @@ const AboutPage = () => {
                 {" "}
                 At Motoland Adventures, we understand the allure of the open road
                 and the thrill of exploring new horizons. Our meticulously
-                curated tours are designed to immerse you in the awe-inspiring
+                curated tours are designed to immerse you in the inspiring
                 beauty of Ladakh while offering the freedom and flexibility to
                 create unforgettable memories at your own pace.
               </p>
@@ -90,7 +90,7 @@ const AboutPage = () => {
               Celebrating the freedom of the open road and the thrill of
               two-wheel exploration, our journey at Motoland Adventures is more
               than just a ride it is a testament to the spirit of adventure that
-              fuels our souls and drives us forward."
+              fuels our souls and drives us forward.
             </span>
             <div className="self-end text-sm rounded-md p-1 font-semibold flex">
               <span className="w-28 h-8 rounded bg-black text-red-500  flex items-center justify-center">
