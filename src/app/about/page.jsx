@@ -42,13 +42,13 @@ const AboutPage = () => {
               <p>
                 {" "}
                 With over a decade of experience in the industry, our passion
-                for adventure runs deep, and now, as proud owners of our own
+                for adventure runs deep, and now, as proud owner of our own
                 Motorcycle travel agency, we are dedicated to providing you with
                 unparalleled experiences on two wheels.
               </p>
               <p>
                 {" "}
-                At Motoland Adventure, we understand the allure of the open road
+                At Motoland Adventures, we understand the allure of the open road
                 and the thrill of exploring new horizons. Our meticulously
                 curated tours are designed to immerse you in the awe-inspiring
                 beauty of Ladakh while offering the freedom and flexibility to
@@ -62,7 +62,7 @@ const AboutPage = () => {
               </p>
               <p>
                 {" "}
-                From top-of-the-line rental bikes to expertly crafted
+                From motorcycles rental to expertly crafted
                 itineraries, we ensure that every aspect of your journey is
                 seamlessly taken care of, allowing you to focus on what truly
                 matters – the ride of a lifetime.
@@ -123,9 +123,7 @@ const AboutPage = () => {
               ></path>
             </motion.svg>
           </div>
-          {/* SKILLS CONTAINER */}
           <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
-            {/* SKILL TITLE */}
             <motion.h1
               initial={{ x: "-300px" }}
               animate={isSkillRefInView ? { x: 0 } : {}}
@@ -134,7 +132,6 @@ const AboutPage = () => {
             >
               SERVICE
             </motion.h1>
-            {/* SKILL LIST */}
             <motion.div
               initial={{ x: "-300px" }}
               animate={isSkillRefInView ? { x: 0 } : {}}
