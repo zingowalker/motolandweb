@@ -57,26 +57,27 @@ const ContactPage = () => {
                 {letter}
               </motion.span>
             ))}
-            😊
           </div>
         </div>
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-4 justify-center p-16"
+          className="h-full lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-4 justify-center p-16"
         >
-          <span>Hi, Motoland Adventures,</span>
+          <span>Hi,</span>
           <textarea
             rows={6}
             placeholder="message..."
             className="bg-transparent border-b-2 border-b-black outline-none resize-none"
             name="user_message"
+            required
           />
           <span>My mail address is:</span>
           <input
             name="user_email"
             type="text"
             className="bg-transparent border-b-2 border-b-black outline-none"
+            required
           />
           <span>Regards</span>
           <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
